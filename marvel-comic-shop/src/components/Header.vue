@@ -1,7 +1,7 @@
 <template>
     <div>
         <TopBar />
-        <div class="middleBar"></div>
+        <MiddleBar />
         <div class="bottomBar"></div>
     </div>
     
@@ -10,11 +10,13 @@
 
 <script>
 import TopBar from './TopBar.vue'
+import MiddleBar from './MiddleBar.vue'
 
 export default {
     name: "Header",
     components: {
-        TopBar
+        TopBar,
+        MiddleBar
     }
 }
 </script>
