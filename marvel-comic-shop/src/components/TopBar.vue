@@ -1,6 +1,6 @@
 <template> 
     <div class="topBar">
-        <h2>Frete Grátis</h2>
+        <span>Frete Grátis</span>
     </div>
 </template>
 
@@ -15,10 +15,13 @@ export default {
 
 <style scoped>
 .topBar{
-    
     font-family: 'Asap Condensed';
     background-color: #f7db3b;
     text-align: center;
-    padding: 1rem;
 }
+.topBar > span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 </style>
