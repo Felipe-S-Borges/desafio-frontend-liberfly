@@ -38,7 +38,6 @@ export default {
     text-align: center;
     font-family: 'Asap Condensed';
     font-size: 1.1rem;
-    font-weight: bold;
     color: white;
     margin-right: 1.5rem;
     text-decoration: none;

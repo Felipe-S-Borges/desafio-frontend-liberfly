@@ -1,16 +1,20 @@
 <template>
+<div>
   <Header></Header>
-  
+  <Banner />
+</div>
 </template>
 
 <script>
 
 import Header from './components/Header.vue'
+import Banner from './components/Banner.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Banner
   }
 }
 </script>

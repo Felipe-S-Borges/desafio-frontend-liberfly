@@ -71,7 +71,6 @@ export default {
 
 .btn{
     font-family: 'Asap Condensed';
-    font-weight: bold;
     background-color:#f7db3b;
     color: black;
     border-left: 1.5pt solid black;
