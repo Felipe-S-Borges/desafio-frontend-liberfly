@@ -2,9 +2,11 @@
     <div class="middleBar">
         <div class="container">
             <img src='../assets/logo-solo.svg' alt="Logo Marvel" />
-            <div class="searchBox">
-                <input type="text" placeholder="Vosso desejo será uma ordem">
-                <button class="btn">Encontre</button>
+            <div>
+                <div class="searchBox">
+                    <input type="text" placeholder="Vosso desejo será uma ordem">
+                    <button class="btn">Encontre</button>
+                </div>
             </div>
             <div class="cart">
                 <a href="#"><img src='../assets/profile-icon.svg' alt="Profile" /></a>
@@ -46,11 +48,15 @@ export default {
     width:20%;
 }
 
+
 .searchBox {
     display: flex;
+    border: 1.5pt solid black ;
+    border-radius: 3pt;
 }
 .searchBox > input{
     width: 35vw
+
 }
 .cart{
     text-align: right;
@@ -61,5 +67,16 @@ export default {
 }
 .cart > a > img{
     width:20%;
+}
+
+.btn{
+    font-family: 'Asap Condensed';
+    font-weight: bold;
+    background-color:#f7db3b;
+    color: black;
+    border-left: 1.5pt solid black;
+}
+.btn:hover{
+    background-color:#f7e894;
 }
 </style>
