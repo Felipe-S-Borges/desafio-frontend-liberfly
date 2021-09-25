@@ -3,6 +3,7 @@
   <Header></Header>
   <Banner />
   <ComicsDisplay />
+  <Footer />
 </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import ComicsDisplay from './components/ComicsDisplay.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Banner,
-    ComicsDisplay
+    ComicsDisplay,
+    Footer
   }
 }
 </script>
