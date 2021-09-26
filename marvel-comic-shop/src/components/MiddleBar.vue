@@ -23,7 +23,10 @@
 
 
 export default {
-    name: 'MiddleBar'
+    name: 'MiddleBar',
+    methods:{
+        
+    }
 }
 </script>
 

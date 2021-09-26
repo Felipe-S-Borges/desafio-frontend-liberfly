@@ -4,7 +4,7 @@
   <Banner />
   <ComicsDisplay />
   <Footer />
-  <CheckoutSideBar />
+  <CheckoutSideBar v-model="visibility" />
 </div>
 </template>
 
