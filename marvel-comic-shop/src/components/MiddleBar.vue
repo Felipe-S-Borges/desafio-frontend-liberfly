@@ -9,8 +9,8 @@
                 </div>
             </div>
             <div class="cart">
-                <a href="#"><img src='../assets/profile-icon.svg' alt="Profile" /></a>
-                <a href="#"><img src='../assets/bag-icon.svg' alt="Checkout" /></a>
+                <span href="#"><img src='../assets/profile-icon.svg' alt="Profile" /></span>
+                <span @emit-click="checkout"><img src='../assets/bag-icon.svg' alt="Checkout" /></span>
                
             </div>
         </div>
@@ -24,9 +24,19 @@
 
 export default {
     name: 'MiddleBar',
+     data(){
+        return{
+            visibilityCheckout: false
+        }
+    },
     methods:{
-        
+        checkout(){
+            this.visibilityCheckout? this.visibilityCheckout = false : this.visibilityCheckout = true
+            console.log(this.visibilityCheckout)
+        }
+
     }
+   
 }
 </script>
 
@@ -65,10 +75,17 @@ export default {
     text-align: right;
 }
 
-.cart > a:first-child{
+.cart > spaspan:first-child{
     margin-right: 1rem;
 }
-.cart > a > img{
+
+.cart > span{
+    cursor: pointer;
+}
+.cart > span:hover{
+    filter: hue-rotate(255deg);
+}
+.cart > span > img{
     width:20%;
 }
 

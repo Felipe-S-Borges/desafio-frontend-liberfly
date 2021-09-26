@@ -5,7 +5,7 @@
             <span>Minha sacola</span>
         </div>
         <div class="sideBarcontent">
-           aaa
+         
         </div>
         <div class="sideBarFooter">
             <div class="descountBox">
@@ -14,7 +14,7 @@
             </div>
             <div class="calculos">
                 <span>Total</span>
-                <span>R$255</span>
+                <span><strong>R$255</strong></span>
             </div>
             <button class="finalizarcao">Finalizar compra</button>
         </div>
@@ -23,8 +23,13 @@
 
 
 <script>
+
+
 export default {
     name: 'CheckoutSideBar',
+    props:{
+        isVisible:{type:Boolean}
+    },
     data(){
         return{
             visibility: true
@@ -33,9 +38,11 @@ export default {
     methods:{
         visibilityToggler(){
             this.visibility? this.visibility = false : this.visibility = true
+            this.$emit('visibilityToggler', this.visibility)
         }
     }
 }
+
 </script>
 
 
@@ -64,6 +71,14 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 }
+.sideBarHead button{
+    background-color: transparent;
+    font-weight: bold;
+}
+.sideBarHead span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 .sideBarcontent{
     height: 60vh;
 }
@@ -74,6 +89,7 @@ export default {
     border-radius: 3pt;
     width: 80%;
     margin: auto;
+    margin-top:1rem ;
     
 }
 .descountBox input{

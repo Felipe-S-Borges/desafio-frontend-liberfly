@@ -1,11 +1,11 @@
 <template>
-<div>
-  <Header></Header>
-  <Banner />
-  <ComicsDisplay />
-  <Footer />
-  <CheckoutSideBar v-model="visibility" />
-</div>
+  <div>
+    <Header></Header>
+    <Banner />
+    <ComicsDisplay />
+    <Footer />
+    <CheckoutSideBar />
+  </div>
 </template>
 
 <script>

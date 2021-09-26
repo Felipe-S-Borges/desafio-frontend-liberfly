@@ -1,7 +1,7 @@
 <template>
     <div class="comicsGrid">
         <div  v-for="(quote,key) in quotes" :key="key">
-            <Comic :comicKey="key" :comicData="quote"/>
+            <Comic :comicKey="key" :comicData="quote" />
         </div>
     </div>      
 </template>

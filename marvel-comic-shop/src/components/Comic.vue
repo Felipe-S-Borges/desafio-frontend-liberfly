@@ -1,5 +1,5 @@
-<template>
-    <div class="comicCover">
+<template >
+    <div class="comicCover" >
         <div class="comicImage">
             <img :src="`${comicData.thumbnail.path}.${comicData.thumbnail.extension}`" class="img-responsive" alt="Comic cover">
         </div>
@@ -23,7 +23,6 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                ...
                 </div>
             </div>
         </div>
