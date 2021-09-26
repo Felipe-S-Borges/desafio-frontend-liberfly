@@ -32,6 +32,7 @@
 - [x] Lista de quadrinhos consumindo a api da Marvel
 - [x] Modal de detalhe do quadrinho selecionado
 - [x] Tela de checkout
+- [ ] Validação de cupom de desconto
 - [x] Lista de quadrinhos adicionados ao carrinho
 - [ ] Exibir a quantidade de quadrinhos selecionados no cart
 - [ ] Carregamento aleatório de quadrinhos raros
