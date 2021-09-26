@@ -1,13 +1,14 @@
 <template>
     <div class="comicCover">
         <div class="comicImage">
-            <img src="../assets/tete.jpg" class="img-responsive" alt="">
+            <img :src="`${comicData.thumbnail.path}.${comicData.thumbnail.extension}`" class="img-responsive" alt="Comic cover">
         </div>
-        
+        <h6>{{comicData.title}}</h6>
         <div class="buttonContainer">
             <button class="mais">Mais</button>
             <button class="adicionar">Adicionar</button>
         </div>
+        
         
     </div>
 </template>
@@ -16,7 +17,11 @@
 
 <script>
 export default {
-    name: 'Comic'
+    name: 'Comic',
+    props:{
+        comicKey:{type:Number,required: true},
+        comicData:{type:Object,required:true}
+    }
     
 }
 </script>
@@ -28,7 +33,12 @@ export default {
 }
 .comicImage{
     width: 100%;
+    height: 100%;
     margin-bottom: 0.275rem;
+    
+}
+.comicImage > img{
+    object-fit: cover;
 }
 .comicImage:hover{
     transform: translateY(-5px);

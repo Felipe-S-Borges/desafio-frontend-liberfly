@@ -4,6 +4,7 @@
   <Banner />
   <ComicsDisplay />
   <Footer />
+  <CheckoutSideBar />
 </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import ComicsDisplay from './components/ComicsDisplay.vue'
 import Footer from './components/Footer.vue'
+import CheckoutSideBar from './components/CheckoutSideBar.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     Header,
     Banner,
     ComicsDisplay,
-    Footer
+    Footer,
+    CheckoutSideBar
   }
 }
 </script>

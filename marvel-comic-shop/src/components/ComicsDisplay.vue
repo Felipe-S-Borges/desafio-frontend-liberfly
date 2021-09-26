@@ -1,17 +1,8 @@
 <template>
     <div class="container">
         <h2>Edições Disponíveis</h2>
-        <div class="comicsGrid">
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            <Comic />
-            
+        <div >
+            <ComicsList :quotes="quotes" />
         </div>
         
         
@@ -22,16 +13,29 @@
 
 
 <script>
-import Comic from './Comic.vue'
+//import Comic from './Comic.vue'
+import {onMounted, reactive, toRefs} from 'vue'
 import api from '../services/api'
+import ComicsList from './ComicsList.vue'
+
+
 export default {
     name: 'ComicsDisplay',
     components:{
-        Comic
+        //Comic,
+        ComicsList
     },
-    async setup(){
-        const response =  await api.getCharacters()
-        console.log(response.data.data.results)
+    setup(){
+        const data = reactive({
+            quotes:{},
+        })
+        onMounted(async ()=>{
+            const response = await api.getComics()
+            console.log(response)
+            data.quotes = response.data.data.results
+        })
+
+        return {... toRefs(data)}
     }
 }
 </script>
@@ -40,11 +44,6 @@ export default {
 <style scoped>
 .container{
     width: 80%;
-}
-.comicsGrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    gap:1rem;
 }
 
 h2{

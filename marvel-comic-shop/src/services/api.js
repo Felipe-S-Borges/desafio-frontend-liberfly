@@ -12,5 +12,8 @@ const api = axios.create({
 export default {
     getCharacters() {
         return api.get('/characters')
+    },
+    getComics() {
+        return api.get('/comics')
     }
 }
