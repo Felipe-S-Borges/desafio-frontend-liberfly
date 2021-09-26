@@ -23,10 +23,15 @@
 
 <script>
 import Comic from './Comic.vue'
+import api from '../services/api'
 export default {
     name: 'ComicsDisplay',
     components:{
         Comic
+    },
+    async setup(){
+        const response =  await api.getCharacters()
+        console.log(response.data.data.results)
     }
 }
 </script>
