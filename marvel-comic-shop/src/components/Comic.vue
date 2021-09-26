@@ -30,6 +30,13 @@ export default {
     width: 100%;
     margin-bottom: 0.275rem;
 }
+.comicImage:hover{
+    transform: translateY(-5px);
+    transition: transform ease 800ms;
+    outline: 1.5pt solid black;
+    transition: outline ease 200ms;
+    box-shadow: 5px 5px 10px;
+}
 .buttonContaine{
 display: flex;
 justify-content: space-between;
