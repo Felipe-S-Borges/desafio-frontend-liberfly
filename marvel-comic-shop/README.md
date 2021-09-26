@@ -1,24 +1,8 @@
-# marvel-comic-shop
+# Inicio
+<h1 align="center">
+   <img src="/.github/layout-home.jpg" alt="Homepage">
+</h1>
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<h2>
+   :scroll: Desafio Liberfly
+</h2>
