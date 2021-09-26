@@ -1,8 +1,6 @@
-# Inicio
+# :scroll: Desafio Liberfly
 <h1 align="center">
-   <img src="/.github/layout-home.jpg" alt="Homepage">
+   <img src="./github/layout-home.jpg" alt="Homepage">
 </h1>
 
-<h2>
-   :scroll: Desafio Liberfly
-</h2>
+
