@@ -10,10 +10,11 @@
             </div>
             <div class="cart">
                 <span href="#"><img src='../assets/profile-icon.svg' alt="Profile" /></span>
-                <span @emit-click="checkout"><img src='../assets/bag-icon.svg' alt="Checkout" /></span>
+                <span v-on:click="checkout"><img src='../assets/bag-icon.svg' alt="Checkout" /></span>
                
             </div>
         </div>
+        
     </div>
 </template>
 
@@ -42,6 +43,12 @@ export default {
 
 
 <style scoped>
+.hidden{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
 .middleBar{
     background-color: #c70732;
 }

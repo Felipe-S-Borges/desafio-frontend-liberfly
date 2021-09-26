@@ -1,5 +1,5 @@
 <template>
-    <div class="sideBarContainer" :class="{'show': visibility === true,'hidden': visibility === false} ">
+    <div class="sideBarContainer" v-show="visibility">
         <div class="sideBarHead">
             <button v-on:click="visibilityToggler">Voltar</button>
             <span>Minha sacola</span>
@@ -38,7 +38,7 @@ export default {
     methods:{
         visibilityToggler(){
             this.visibility? this.visibility = false : this.visibility = true
-            this.$emit('visibilityToggler', this.visibility)
+           
         }
     }
 }
